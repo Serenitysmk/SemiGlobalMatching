@@ -9,3 +9,6 @@ target_link_libraries(SGM PUBLIC ${COMMON_LINK_LIBRARIES})
 
 add_executable(main main.cc)
 target_link_libraries(main PRIVATE SGM)
+
+add_executable(general_test general_test.cc)
+target_link_libraries(general_test PRIVATE SGM)
